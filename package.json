@@ -1,0 +1,23 @@
+{
+  "name": "tap-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react-dom": "^16.9.4",
+    "@types/react": "^16.9.17",
+    "parcel-bundler": "^1.12.4",
+    "react-dom": "^16.12.0",
+    "react": "^16.12.0",
+    "rxjs": "^7.0.0-alpha.1",
+    "typescript": "^3.7.4"
+  }
+}
