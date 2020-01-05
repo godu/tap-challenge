@@ -1,9 +1,8 @@
+import '@babel/runtime/regenerator';
 import { render, unmountComponentAtNode } from 'react-dom';
 import main from './main';
 
 const container = document.getElementById("app");
-
-console.log(container)
 
 main().subscribe(
   vdom => {

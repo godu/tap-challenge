@@ -4,20 +4,32 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "parcel src/client/index.html",
+    "deploy": "cdk deploy",
+    "build": "parcel build src/client/index.html",
     "typecheck": "tsc --noEmit",
     "test": "npm run typecheck"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/react-dom": "^16.9.4",
+    "@aws-amplify/auth": "^2.1.2",
+    "@aws-amplify/core": "^2.2.1",
+    "@aws-cdk/assert": "^1.19.0",
+    "@aws-cdk/aws-cognito": "^1.19.0",
+    "@aws-cdk/core": "^1.19.0",
+    "@babel/runtime": "^7.7.7",
+    "@types/node": "13.1.4",
     "@types/react": "^16.9.17",
-    "parcel-bundler": "^1.12.4",
-    "react-dom": "^16.12.0",
+    "@types/react-dom": "^16.9.4",
+    "ava": "^2.4.0",
+    "aws-cdk": "^1.19.0",
+    "parcel": "^1.12.4",
     "react": "^16.12.0",
+    "react-dom": "^16.12.0",
     "rxjs": "^7.0.0-alpha.1",
+    "source-map-support": "^0.5.16",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.4"
   }
 }
