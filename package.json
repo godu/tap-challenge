@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/client/index.html",
     "deploy": "cdk deploy",
-    "build": "parcel build src/client/index.html",
+    "build": "parcel build --no-minify --public-url ./ --out-dir docs src/client/index.html",
     "typecheck": "tsc --noEmit",
     "test": "npm run typecheck"
   },
@@ -15,6 +15,7 @@
   "dependencies": {
     "@aws-amplify/auth": "^2.1.2",
     "@aws-amplify/core": "^2.2.1",
+    "@aws-amplify/storage": "^2.1.2",
     "@aws-cdk/assert": "^1.19.0",
     "@aws-cdk/aws-cognito": "^1.19.0",
     "@aws-cdk/core": "^1.19.0",
